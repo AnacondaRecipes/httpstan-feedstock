@@ -21,6 +21,7 @@ requirements:
     - {{ compiler('cxx') }}
   host:
     - python
+    - pybind11 >=2.9.2
     - poetry-core >=1.0.0
     - setuptools
     - wheel
@@ -32,6 +33,10 @@ requirements:
     - webargs  >=8.0
     - marshmallow  >=3.10
     - numpy  >=1.19
+    - rapidjson
+    - boost
+    - eigen
+    - tbb
 
 test:
   imports:
