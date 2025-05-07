@@ -25,20 +25,23 @@ requirements:
     - poetry-core >=1.0.0
     - pybind11  >=2.9.2
     - python
-    - setuptools >=48.0
+    - setuptools
   run:
     - python
     - aiohttp  >=3.7
     - appdirs  >=1.4
     - marshmallow  >=3.10
     - numpy  >=1.19
-    - setuptools  >=41.0
     - webargs  >=8.0
 
 test:
   imports:
     - httpstan
     - httpstan.services
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://pypi.org/project/httpstan/
