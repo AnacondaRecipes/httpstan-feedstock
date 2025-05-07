@@ -49,6 +49,8 @@ about:
   license_family: BSD
   license_file: LICENSE
   summary: HTTP-based REST interface to Stan, a package for Bayesian inference.
+  description: |
+    httpstan is a shim allowing clients able to make HTTP-based requests to call functions in the Stan C++ library’s stan::services namespace. httpstan was originally developed as a “backend” for a Stan interface written in Python, PyStan.
   doc_url: https://httpstan.readthedocs.io/
   dev_url: https://github.com/stan-dev/httpstan
 
