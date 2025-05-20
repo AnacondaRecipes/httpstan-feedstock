@@ -28,11 +28,12 @@ requirements:
     - setuptools
   run:
     - python
-    - aiohttp  >=3.7
-    - appdirs  >=1.4
-    - marshmallow  >=3.10
+    - aiohttp  >=3.7,<4.0
+    - appdirs  >=1.4,<2.0
+    - marshmallow  >=3.10,<4.0
     - numpy  >=1.19
-    - webargs  >=8.0
+    - webargs  >=8.0,<9.0
+    - setuptools >=48.0
 
 test:
   imports:
