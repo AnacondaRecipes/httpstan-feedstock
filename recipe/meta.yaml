@@ -88,7 +88,9 @@ test:
     - httpstan.services
   commands:
     - pip check
-    - pytest -k "not ({{ tests_to_skip }})" {{ deselected_tests }} -vv tests
+    # conftest.py used unix `fork` which is not available on Windows
+    # E   ValueError: cannot find context for 'fork'
+    - pytest -k "not ({{ tests_to_skip }})" {{ deselected_tests }} -vv tests  # [not win]
   requires:
     - pip
     - pytest
