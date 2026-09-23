@@ -13,7 +13,6 @@ build:
   number: 0
   script: "{{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation"
 
-# Upstream source - https://github.com/stan-dev/httpstan/blob/4.17.0/pyproject.toml
 requirements:
   host:
     - python
