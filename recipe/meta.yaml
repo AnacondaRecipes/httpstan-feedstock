@@ -12,12 +12,11 @@ source:
 build:
   number: 0
   script: "{{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation"
-  noarch: python
 
 # Upstream source - https://github.com/stan-dev/httpstan/blob/4.17.0/pyproject.toml
 requirements:
   host:
-    - python >=3.12,<4.0
+    - python
     - pip
     - poetry-core >=1.0.0
     - setuptools
